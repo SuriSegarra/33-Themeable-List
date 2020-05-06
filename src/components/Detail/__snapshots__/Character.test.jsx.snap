@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character component renders Character 1`] = `
+<figure>
+  <img
+    alt="Rick Sanchez"
+    src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+  />
+  <figcaption>
+    <h1>
+      Rick Sanchez
+    </h1>
+    <p>
+      Specie:
+      human
+    </p>
+    <p>
+      Status:
+      alive
+    </p>
+    <p>
+      origin:
+      earth
+    </p>
+  </figcaption>
+</figure>
+`;
