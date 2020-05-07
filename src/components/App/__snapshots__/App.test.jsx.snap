@@ -4,7 +4,7 @@ exports[`App component renders App 1`] = `
 <Fragment>
   <LightDarkProvider>
     <Header />
-    <CharacterViewer />
+    <CharactersPage />
   </LightDarkProvider>
 </Fragment>
 `;
