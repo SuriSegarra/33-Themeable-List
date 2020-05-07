@@ -1,6 +1,14 @@
 import React from 'react';
 import Character from '../Detail/Character';
 import PropTypes from 'prop-types';
+import styleDark from './Dark.css';
+import styleLight from './Light.css';
+
+
+const themeFactory = {
+  dark: styleDark,
+  light: styleLight
+};
 
 const Characters = ({ characters }) => {
   // console.log(characters);
@@ -10,7 +18,8 @@ const Characters = ({ characters }) => {
     </li>
   ));
   return (
-    <ul>
+    //this ul is the ul we are targeting.
+    <ul className={themeFactory[theme].CharacterList}>
       {charactersElement}
     </ul>
   );
