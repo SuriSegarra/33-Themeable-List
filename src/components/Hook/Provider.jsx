@@ -18,10 +18,11 @@ export const LightDarkProvider = ({ children }) => {
     </DarkOrLight.Provider>
   );
 };
-
+//specify that anything renderable 
 LightDarkProvider.propTypes = {
   children: PropTypes.node
 };
+//useContext hook allows passing data to children elements without using redux
 
 export const useToggle = () => {
   const { toggle } = useContext(DarkOrLight);
