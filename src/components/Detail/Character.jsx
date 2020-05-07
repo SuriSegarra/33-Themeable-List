@@ -5,7 +5,7 @@ const Character = ({ image, name, species, status, origin }) => (
   <figure>
     <img src={image} alt={name}/>
     <figcaption>
-      <h1 className='name'>{name}</h1>
+      <h1>{name}</h1>
       <p>Specie:{species}</p>
       <p>Status:{status}</p>
       <p>origin:{origin}</p>
