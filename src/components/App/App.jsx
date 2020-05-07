@@ -1,10 +1,15 @@
 import React from 'react';
 import CharacterViewer from '../../Containers/CharactersViewer';
+import Header from '../Header/Header';
+import { LightDarkProvider } from '../Hook/Provider';
 
 export default function App() {
   return (
     <>
-      <CharacterViewer/>
+      <LightDarkProvider>
+        <Header/>
+        <CharacterViewer/>
+      </LightDarkProvider>
     </>
   );
 }

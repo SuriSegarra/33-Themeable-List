@@ -5,7 +5,6 @@ import styleDark from './Dark.css';
 import styleLight from './Light.css';
 import { useDarkLight } from '../Hook/Provider';
 
-
 const Characters = ({ characters }) => {
   
   
