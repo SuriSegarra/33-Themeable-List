@@ -1,11 +1,12 @@
 export const fetchCharacters = () => {
   return fetch('https://rickandmortyapi.com/api/character')
     .then(res => res.json())
-    .then(res => ({
-      image: res.image,
-      name: res.name,
-      species: res.species,
-      status: res.status,
-      origin: res.origin
-    }));
+    .then(res => res.results.map(character => ({
+      id: character.id,
+      image: character.image,
+      name: character.name,
+      species: character.species,
+      status: character.status,
+      origin: character.origin.name
+    })));
 };

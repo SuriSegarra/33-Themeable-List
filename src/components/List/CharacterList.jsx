@@ -3,6 +3,7 @@ import Character from '../Detail/Character';
 import PropTypes from 'prop-types';
 
 const Characters = ({ characters }) => {
+  console.log(characters);
   const charactersElement = characters.map(character => (
     <li key={character.id}>
       <Character {...character}/>

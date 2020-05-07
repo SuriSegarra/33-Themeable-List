@@ -1,6 +1,10 @@
 import React from 'react';
+import CharacterViewer from '../../Containers/CharactersViewer';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <CharacterViewer/>
+    </>
+  );
 }
-  
