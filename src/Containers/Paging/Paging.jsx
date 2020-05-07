@@ -18,7 +18,7 @@ const CharactersPage = () => {
   return (
     <>
       <button onClick={() => decrement(-1)} disabled={page === 1}>&#60;</button>
-      <button onClick={() => increment(+1)} disabled={characters.length < 5}>&#62;</button>
+      <button onClick={() => increment(+1)} disabled={characters.length < 20}>&#62;</button>
       <Characters characters={characters}/>
     </>
   );
