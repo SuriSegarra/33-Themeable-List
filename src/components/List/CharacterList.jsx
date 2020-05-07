@@ -3,23 +3,24 @@ import Character from '../Detail/Character';
 import PropTypes from 'prop-types';
 import styleDark from './Dark.css';
 import styleLight from './Light.css';
+import { useDarkLight } from '../Hook/Provider';
 
-
-const themeFactory = {
-  dark: styleDark,
-  light: styleLight
-};
 
 const Characters = ({ characters }) => {
-  // console.log(characters);
+  
+  
   const charactersElement = characters.map(character => (
     <li key={character.id}>
       <Character {...character}/>
     </li>
   ));
+  
+  const theme = useDarkLight();
+  const stylesToUse = theme === 'light' ? styleLight : styleDark; 
+  
   return (
     //this ul is the ul we are targeting.
-    <ul className={themeFactory[theme].CharacterList}>
+    <ul className={stylesToUse.CharacterList}>
       {charactersElement}
     </ul>
   );
